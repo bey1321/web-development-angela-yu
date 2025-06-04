@@ -1,0 +1,109 @@
+/* Reset Styles */
+body {    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Dark Theme */
+    color: white;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;    
+    background-color: #287b9a;
+    color: white;
+    padding: 20px 0;
+    padding-top:0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-list li {    
+    border: 1.5px solid rgb(109, 161, 217);
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-list li:hover {
+    background-color: rgb(109, 161, 217);
+    color: #1a1a2e;
+}
+
+/* Home Page */
+.home-page {
+    margin-left: 220px;
+    text-align: center;
+    background-image: url("https://th.bing.com/th/id/R.48bc466a55beb5de882b7394e51eac9f?rik=o3mhrzONTNcHDQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2f3%2f3%2f765105-technology-background-images-1920x1080-free-download.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Profile Image */
+#home-page-img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border: 3px solid white;
+    margin-top: 30px;
+}
+
+/* Home Page Text */
+#home-page-introduction {
+    padding: 0 20%;
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#call-to-action {
+    color: rgb(255, 165, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Notable Work Section */
+#notable-work-introduction {
+    background-color: rgba(140, 196, 240, 0.9);
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#notable-work-introduction h1 {
+    color: #1a1a2e;
+}
+
+/* First-Level List Items */
+#notable-work-introduction > ul > li {
+    list-style: none;
+    text-align: left;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Nested List Items */
+#notable-work-introduction > ul > li > ul > li {
+    text-align: left;
+    color: beige;
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 1.5;
+    list-style-type: disc;
+}

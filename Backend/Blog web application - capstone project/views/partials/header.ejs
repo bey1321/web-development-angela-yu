@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Web Application</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li id="home">Home</li>
+            <li id="essays" data-action="/essay" onclick="navigateTo(this)">Essays</li>
+            <li id="h-p">H&P</li>
+            <li id="books">Books</li>
+            <li id="yc">YC</li>
+            <li id="arc">Arc</li>
+            <li id="bel">Bel</li>
+            <li id="lisp">Lisp</li>
+            <li id="spam">Spam</li>
+            <li id="responses">Responses</li>
+            <li id="faqs">FAQs</li>
+            <li id="raqs">RAQs</li>
+            <li id="quotes">Quotes</li>
+            <li id="rss">RSS</li>
+            <li id="bio">Bio</li>
+            <li id="twitter">Twitter</li>
+            <li id="mastodon">Mastodon</li>
+        </ul>
+
+        <script>
+            function navigateTo(item) {
+                const url = item.getAttribute('data-action');
+                window.location.href = url;  // Redirect to the URL
+            }
+        </script>
+    </nav>
